@@ -14,11 +14,3 @@
 .carousel-caption:hover{
     background-color: #040618ed;
 }
-
-.carousel-item img{
-    transform: scale(1) 0.3s;
-}
-
-.carousel-item img:hover{
-    transform: scale(1.2) 0.3s;
-}
