@@ -21,9 +21,9 @@
                     ЦОДД
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <img src="frontend/assets/images/three-bars-24.svg" alt="">
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
@@ -32,7 +32,7 @@
                             <a class="nav-link fw-semibold text-white" href="index.html">ГЛАВНАЯ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold text-white" href="#">НОВОСТИ</a>
+                            <a class="nav-link fw-semibold text-white" href="news.html">НОВОСТИ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-semibold text-white" href="projects.html">ПРОЕКТЫ</a>
@@ -52,7 +52,8 @@
                                 <li><a class="dropdown-item text-dark" href="#fines">Штрафы</a></li>
                                 <li><a class="dropdown-item text-dark" href="#fines-analysis">Аналитика штрафов</a></li>
                                 <li><a class="dropdown-item text-dark" href="#evacs">Эвакуации</a></li>
-                                <li><a class="dropdown-item text-dark" href="#evac-analysis">Аналитика эвакуаций</a></li>
+                                <li><a class="dropdown-item text-dark" href="#evac-analysis">Аналитика эвакуаций</a>
+                                </li>
                                 <li><a class="dropdown-item text-dark" href="#tl-registry">Реестр светофоров</a></li>
                             </ul>
                         </li>
@@ -70,106 +71,129 @@
 
     <div class="container">
         <h1 class="mt-5 fw-bold" id="fines">ШТРАФЫ</h1>
+        <div class="table-responsive">
             <table class="table table-striped table-dark my-5">
-            <thead>
-                <tr>
-                    <th scope="col">Дата</th>
-                    <th scope="col">Количество зафиксированных нарушений камерами ФВФ (нарастающим итогом)</th>
-                    <th scope="col">Количество вынесенных постановлений (нарастающим итогом)</th>
-                    <th scope="col">Сумма наложенных штрафов (нарастающим итогом)</th>
-                    <th scope="col">Сумма взысканных штрафов (нарастающим итогом)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ymnhbg</td>
-                    <td>апвм</td>
-                    <td>цкп</td>
-                    <td>укпику</td>
-                    <td>укпику</td>
-                </tr>
-            </tbody>
-        </table>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Количество зафиксированных нарушений камерами ФВФ (нарастающим итогом)</th>
+                        <th scope="col">Количество вынесенных постановлений (нарастающим итогом)</th>
+                        <th scope="col">Сумма наложенных штрафов (нарастающим итогом)</th>
+                        <th scope="col">Сумма взысканных штрафов (нарастающим итогом)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="frontend/assets/ЦОДД.xlsx" download class="link-offset-3 fs-5"><img src="#" alt=""> Данные по штрафам</a>
+
+        <h1 class="mt-5 fw-bold" id="fines-analysis">АНАЛИТИКА ШТРАФОВ</h1>
+        <div class="table-responsive">
+            <table class="table table-striped table-dark my-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Период</th>
+                        <th scope="col">Зафиксировано нарушений</th>
+                        <th scope="col">Вынесено постановлений с КФВФ</th>
+                        <th scope="col">Сумма наложенных штрафов, руб.</th>
+                        <th scope="col">Сумма взысканных штрафов, руб.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <h1 class="mt-5 fw-bold" id="evacs">ЭВАКУАЦИИ</h1>
-        <table class="table table-striped table-dark my-5">
-            <thead>
-                <tr>
-                    <th scope="col">Дата</th>
-                    <th scope="col">Количество </th>
-                    <th scope="col">Количество </th>
-                    <th scope="col">Сумма </th>
-                    <th scope="col">Сумма </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ymnhbg</td>
-                    <td>апвм</td>
-                    <td>цкп</td>
-                    <td>укпику</td>
-                    <td>укпику</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-striped table-dark my-5">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Количество эвакуаторов на линии</th>
+                        <th scope="col">Количество выездов</th>
+                        <th scope="col">Количество эвакуаций</th>
+                        <th scope="col">Сумма поступлений по  штрафстоянке</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="frontend/assets/ЦОДД.xlsx" download class="link-offset-3 fs-5"><img src="#" alt=""> Данные по штрафам</a>
 
         <h1 class="mt-5 fw-bold" id="evac-analysis">АНАЛИТИКА ЭВАКУАЦИЙ</h1>
-        <table class="table table-striped table-dark my-5">
-            <thead>
-                <tr>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ymnhbg</td>
-                    <td>апвм</td>
-                    <td>цкп</td>
-                    <td>укпику</td>
-                </tr>
-            </tbody>
-        </table>
-        <h1 class="mt-5 fw-bold" id="fines-analysis">АНАЛИТИКА ШТРАФОВ</h1>
-        <table class="table table-striped table-dark my-5">
-            <thead>
-                <tr>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ymnhbg</td>
-                    <td>апвм</td>
-                    <td>цкп</td>
-                    <td>укпику</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-striped table-dark my-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Период</th>
+                        <th scope="col">Количество выездов</th>
+                        <th scope="col">Количество эвакуаций</th>
+                        <th scope="col">Сумма поступлений</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                        <td>данные</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <h1 class="mt-5 fw-bold" id="tl-registry">РЕЕСТР СВЕТОФОРОВ</h1>
-        <table class="table table-striped table-dark my-5">
-            <thead>
-                <tr>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                    <th scope="col">столбец</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ymnhbg</td>
-                    <td>апвм</td>
-                    <td>цкп</td>
-                    <td>укпику</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-striped table-dark my-5">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Адрес</th>
+                        <th scope="col">Тип светофора</th>
+                        <th scope="col">Год установки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>апвм</td>
+                        <td>цкп</td>
+                        <td>укпику</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
     <!-- Подвал -->
@@ -203,7 +227,7 @@
                 <div class="col-6 col-md">
                     <h5>Дополнительно</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary link-offset-2" href="#">Вакансии</a></li>
+                        <li><a class="link-secondary link-offset-2" href="vacancies.html">Вакансии</a></li>
                         <li><a class="link-secondary link-offset-2" href="services.html">Услуги</a></li>
                         <li><a class="link-secondary link-offset-2" href="#">Политика обработки персональных данных</a>
                         </li>
@@ -233,6 +257,5 @@
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
 </body>
-
 
 </html>
