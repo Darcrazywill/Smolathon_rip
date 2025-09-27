@@ -1,6 +1,0 @@
-@Smolathon_backend_HostAddress = http://localhost:5003
-
-GET {{Smolathon_backend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
