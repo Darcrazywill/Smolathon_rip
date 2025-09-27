@@ -80,6 +80,56 @@
         </div>
     </div>
 
+    <!-- Модальное окно "Напишите нам" -->
+
+    <div class="modal fade" id="contact-us-modal" tabindex="-1" aria-labelledby="contact-us-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-white">
+                <div class="modal-header bg-dark d-flex justify-content-between">
+                    <h1 class="modal-title fs-5 fw-bold" id="contact-us-modal-label">НАПИШИТЕ НАМ</h1>
+                    <button type="button" class="btn bg-dark" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="frontend/assets/images/x-24.svg" alt=""></button>
+                </div>
+                <div class="modal-body bg-dark">
+                    <form>
+                        <div class="mb-3">
+                            <label for="modal-name" class="form-label fs-5">Имя</label>
+                            <input type="text" class="form-control bg-light text-white" id="modal-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-company" class="form-label fs-5">Компания</label>
+                            <input type="text" class="form-control bg-light text-white" id="modal-company" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="col-md-6 col">
+                                <label for="modal-phone" class="form-label fs-5">Телефон</label>
+                                <input type="tel" class="form-control bg-light text-white" id="modal-phone" required>
+                            </div>
+                            <div class="col-md-6 col">
+                                <label for="modal-email" class="form-label fs-5">Почта</label>
+                                <input type="email" class="form-control bg-light text-white" id="modal-email">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-company" class="form-label fs-5">Опишите Вашу задачу</label>
+                            <input type="text" class="form-control bg-light text-white" id="modal-company" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="modal-check" required>
+                            <label class="form-check-label" for="modal-check">Даю согласия на <a href="#"
+                                    class="link-offset-3">обработку персональных данных</a></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="submit"
+                        class="btn btn-success mb-3 fw-semibold rounded-0 border-2 fs-5 px-4">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Услуги -->
 
     <div class="album py-5" id="services-album">
@@ -236,3 +286,4 @@
 </body>
 
 </html>
+
