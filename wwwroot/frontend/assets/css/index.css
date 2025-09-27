@@ -1,0 +1,16 @@
+.carousel-item{
+    height: 32rem;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+}
+
+.carousel-caption{
+    background-color: #040618d0;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption:hover{
+    background-color: #040618ed;
+}
