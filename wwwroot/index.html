@@ -33,7 +33,7 @@
                             <a class="nav-link fw-semibold text-primary" href="#">ГЛАВНАЯ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold text-white" href="#">НОВОСТИ</a>
+                            <a class="nav-link fw-semibold text-white" href="news.html">НОВОСТИ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-semibold text-white" href="projects.html">ПРОЕКТЫ</a>
@@ -42,7 +42,7 @@
                             <a class="nav-link fw-semibold text-white" href="services.html">УСЛУГИ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold text-white" href="#">ВАКАНСИИ</a>
+                            <a class="nav-link fw-semibold text-white" href="vacancies.html">ВАКАНСИИ</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-semibold text-white" href="#" role="button"
@@ -70,7 +70,7 @@
     <!-- Блок с главным изображением -->
 
     <div class="container-fluid p-3 p-md-5 mb-3"
-        style="background-image: url(frontend/assets/images/main-page-image.jpg); background-position: center; background-size: cover;">
+        style="background-image: url(assets/images/main-page-image.jpg); background-position: center; background-size: cover;">
         <div class="container">
             <div class="col-md-6 p-lg-5 my-5">
                 <h1 class="display-4 fw-bold text-white">ПОВЫШЕНИЕ БЕЗОПАСНОСТИ И КОМФОРТА</h1>
@@ -85,13 +85,13 @@
 
     <!-- Блок с описанием -->
 
-    <div class="container py-5 p-lg-5 d-flex flex-sm-row flex-column text-white" id="short-main-info">
-        <div class="container border-start border-5 col-md-4 border-success">
+    <div class="container py-2 p-lg-5 d-flex flex-sm-row flex-column text-white" id="short-main-info">
+        <div class="container border-start border-5 col-md-4 border-success mt-3">
             <h2 class="ps-4 fw-medium">С <span class="text-success fw-bold">2021</span> года мы работаем над
                 стратегически важной задачей — созданием безопасной и
                 интеллектуальной транспортной системы Смоленской области.</h2>
         </div>
-        <div class="container lead fw-normal col-md-6">
+        <div class="container lead fw-normal col-md-6 mt-3">
             <p>Мы повышаем безопасность дорожного движения с помощью интеллектуальных систем. Оптимизируем транспортные
                 потоки, используя данные в реальном времени. Внедряем решения, которые сокращают время в пути и повышают
                 комфорт для каждого.</p>
@@ -105,7 +105,7 @@
 
     <div id="carousel-info" class="carousel slide py-5" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url(frontend/assets/images/mission-image.jpg);">
+            <div class="carousel-item active" style="background-image: url(assets/images/mission-image.jpg);">
                 <div class="carousel-caption">
                     <h2 class="fw-bold">МИССИЯ</h2>
                     <p class="fw-normal lead">Обеспечение безопасного, эффективного и комфортного движения для всех
@@ -114,7 +114,7 @@
                         движения на территории Смоленской области через внедрение современных технологий.</p>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url(frontend/assets/images/values-image.jpg);">
+            <div class="carousel-item" style="background-image: url(assets/images/values-image.jpg);">
                 <div class="carousel-caption">
                     <h2 class="fw-bold">ЦЕННОСТИ</h2>
                     <p class="fw-normal lead">Безопасность и люди — наш абсолютный приоритет. Для их обеспечения мы
@@ -124,7 +124,7 @@
                         жителями, и ответственно — для устойчивого развития транспортной системы региона.</p>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url(frontend/assets/images/vision-image.jpg);">
+            <div class="carousel-item" style="background-image: url(assets/images/vision-image.jpg);">
                 <div class="carousel-caption">
                     <h2 class="fw-bold">ВИДЕНИЕ</h2>
                     <p class="fw-normal lead">Мы стремимся к тому, чтобы Смоленская область
@@ -143,34 +143,52 @@
 
     <!-- Блок с услугами -->
 
-    <div class="container py-4">
+    <div class="container py-4 mb-4">
         <div class="row">
             <div class="container col d-none d-md-block py-5 mt-5">
-                <img src="frontend/assets/images/services-main-image.jpg" alt="Фото" class="col-md-10">
+                <img src="frontend/assets/images/services-main-image.jpg" alt="Фото" class="col-md-10" loading="lazy">
             </div>
 
             <div class="col">
-                <h1 class="mb-5 mt-5 fw-bold">ПОПУЛЯРНЫЕ УСЛУГИ</h1>
-                <div class="col-md-10 border-bottom border-2 my-3">
-                    <h2>Ситуационный центр</h2>
-                    <p class="lead">Круглосуточно управляет дорожной ситуацией города. В нём работает автоматическая
+                <h1 class="mb-5 mt-md-5 fw-bold">ПОПУЛЯРНЫЕ УСЛУГИ</h1>
+                <div class="col-md-10 my-3">
+                    <a href="services.html#services-album" class="link-offset-3 link-underline-success link-underline-opacity-0 link-underline-opacity-75-hover text-white">
+                        <h2><img src="frontend/assets/images/checklist-24.svg" style="width: 40px;" alt="">
+                            Главный специалист отдела контроля исполнения государственных закупок</h2>
+                    </a>
+                    <p class="fs-5 text-secondary">Круглосуточно управляет дорожной ситуацией города. В нём работает автоматическая
                         фиксация нарушений ПДД, онлайн мониторинг дорожной ситуации.</p>
                 </div>
 
-                <div class="col-md-10 border-bottom border-2 my-3">
-                    <h2>Дорожный патруль</h2>
-                    <p class="lead">Экипаж выезжает на аварии по поручению ситуационного центра ЦОДД.</p>
+                <hr class="text-secondary border-3">
+
+                <div class="col-md-10 my-3">
+                    <a href="services.html#services-album" class="link-offset-3 link-underline-success link-underline-opacity-0 link-underline-opacity-75-hover text-white">
+                        <h2><img src="frontend/assets/images/checklist-24.svg" style="width: 40px;" alt="">
+                        Дорожный патруль</h2>
+                    </a>
+                    <p class="fs-5 text-secondary">Экипаж выезжает на аварии по поручению ситуационного центра ЦОДД.</p>
                 </div>
 
-                <div class="col-md-10 border-bottom border-2 my-3">
-                    <h2>Велопатруль</h2>
-                    <p class="lead">Работает в весенне-летний сезон, специалисты объезжают территорию Смоленска и следят
+                <hr class="text-secondary border-3">
+
+                <div class="col-md-10 my-3">
+                    <a href="services.html#services-album" class="link-offset-3 link-underline-success link-underline-opacity-0 link-underline-opacity-75-hover text-white">
+                        <h2><img src="frontend/assets/images/checklist-24.svg" style="width: 40px;" alt="">
+                            Велопатруль</h2>
+                    </a>
+                    <p class="fs-5 text-secondary">Работает в весенне-летний сезон, специалисты объезжают территорию Смоленска и следят
                         за дорожной инфраструктурой: состояние знаков, светофоров, навигационных стел, велопарковок.</p>
                 </div>
 
+                <hr class="text-secondary border-3">
+
                 <div class="col-md-10 my-3">
-                    <h2>Отслеживание работы светофоров</h2>
-                    <p class="lead">Услуга запущена ЦОДД и сервисом 2ГИС, позволяет водителям отслеживать работу
+                    <a href="services.html#services-album" class="link-offset-3 link-underline-success link-underline-opacity-0 link-underline-opacity-75-hover text-white">
+                        <h2><img src="frontend/assets/images/checklist-24.svg" style="width: 40px;" alt="">
+                        Отслеживание работы светофоров</h2>
+                    </a>
+                    <p class="fs-5 text-secondary">Услуга запущена ЦОДД и сервисом 2ГИС, позволяет водителям отслеживать работу
                         светофоров в навигаторе при построении маршрута.</p>
                 </div>
                 <a class="btn btn-outline-success fw-semibold rounded-0 border-3 fs-4 px-4 mt-3"
@@ -182,7 +200,7 @@
     <!-- Блок проекты -->
 
     <div class="container p-3 p-md-5 mt-3"
-        style="background-image: url(frontend/assets/images/projects-main-page-image.jpg); background-position: center; background-size: cover;">
+        style="background-image: url(assets/images/projects-main-page-image.jpg); background-position: center; background-size: cover;">
         <div class="container">
             <h2 class="text-white fw-bold"><span class="display-4 fw-bold">5 ЛЕТ</span> ОТКРЫВАЕМ ДОРОГИ, СКОРОСТИ,
                 ВОЗМОЖНОСТИ</h2>
@@ -198,12 +216,13 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card border-0 rounded-0">
-                    <img src="frontend/assets/images/thumbnail-traffic.jpg" class="img-fluid" alt="Обложка новости">
+                    <img src="frontend/assets/images/thumbnail-traffic.jpg" class="img-fluid" alt="Обложка новости" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title">ИИ-анализатор пробок</h5>
+                        <h5 class="card-title"><img src="frontend/assets/images/comment-24.svg" alt=""> 
+                            ИИ-анализатор пробок</h5>
                         <p class="card-text">Запущен ИИ-анализатор пробок на Ленина.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a class="rounded-0 link-offset-2 fw-medium" href="#">Подробнее</a>
+                            <a class="rounded-0 link-offset-2 fw-medium" href="news.html">Подробнее</a>
                             <small>10.04.2025</small>
                         </div>
                     </div>
@@ -211,12 +230,13 @@
             </div>
             <div class="col">
                 <div class="card border-0 rounded-0">
-                    <img src="frontend/assets/images/thumnail-parking.jpg" class="img-fluid" alt="Обложка новости">
+                    <img src="frontend/assets/images/thumnail-parking.jpg" class="img-fluid" alt="Обложка новости" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title">Новая парковка</h5>
+                        <h5 class="card-title"><img src="frontend/assets/images/comment-24.svg" alt=""> 
+                            Новая парковка</h5>
                         <p class="card-text">Появилась новая подземная парковка на площади Победы — 50 мест.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a class="rounded-0 link-offset-2 fw-medium" href="#">Подробнее</a>
+                            <a class="rounded-0 link-offset-2 fw-medium" href="news.html">Подробнее</a>
                             <small class="text-muted">05.04.2025</small>
                         </div>
                     </div>
@@ -224,12 +244,13 @@
             </div>
             <div class="col">
                 <div class="card border-0 rounded-0">
-                    <img src="frontend/assets/images/thumbnail-towing.jpg" class="img-fluid" alt="Обложка новости">
+                    <img src="frontend/assets/images/thumbnail-towing.jpg" class="img-fluid" alt="Обложка новости" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title">GPS эвакуаторы</h5>
+                        <h5 class="card-title"><img src="frontend/assets/images/comment-24.svg" alt=""> 
+                            GPS эвакуаторы</h5>
                         <p class="card-text">Сотрудники ЦОДД на выезде. «Эвакуаторы теперь работают по GPS»</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a class="rounded-0 link-offset-2 fw-medium" href="#">Подробнее</a>
+                            <a class="rounded-0 link-offset-2 fw-medium" href="news.html">Подробнее</a>
                             <small class="text-muted">01.04.2025</small>
                         </div>
                     </div>
@@ -269,7 +290,7 @@
                 <div class="col-6 col-md">
                     <h5>Дополнительно</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary link-offset-2" href="#">Вакансии</a></li>
+                        <li><a class="link-secondary link-offset-2" href="vacancies.html">Вакансии</a></li>
                         <li><a class="link-secondary link-offset-2" href="services.html">Услуги</a></li>
                         <li><a class="link-secondary link-offset-2" href="#">Политика обработки персональных данных</a>
                         </li>
@@ -300,6 +321,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-
 </html>
-
